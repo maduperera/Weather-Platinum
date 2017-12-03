@@ -36,7 +36,7 @@ uint16_t MyWireLib::Get16bitFromRegister(byte Address)
 	sendbyte((DeviceAddress+1));//11101111
   
 	if(AKS()==false)
-	{ Serial.println("Error: AKS3");}
+	{ Serial.println("WARNING! \nConnection lost with sensor/s. \nPlease check below messages to find out which sensor is faulty");}
   
 	byte MSB;
 	byte LSB;
